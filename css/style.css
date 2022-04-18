@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Bebas+Neue&family=Exo+2&family=Josefin+Sans&family=Kanit&family=Oswald&display=swap');
+:root{
+    --prymary: #EBEFE1;
+    --secondary: #D95F18;
+    --light: #BF8D50;
+    --dark: #0B0B0B;
+    --disable: #5B5D52;
+}
+
+body {
+    font-family: 'Josefin Sans', sans-serif;
+    margin: 0;
+    height: 100vh;
+    background-color: var(--prymary);
+    
+}
+*:first-letter{
+    text-transform: capitalize;
+}
+.roundBorder{
+    border-radius: 5px;
+}
+.list{
+    margin: 25px auto;
+    padding: 25px;
+    background-color:white;
+    width: 100%;max-width: 500px;
+}
+.date{
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 1.5em;
+}
+.dateRight{
+    display: flex;
+    align-items: center;
+}
+#dateNumber{
+    font-size: 2em;
+}
+#dateText{
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+#dateMonth,
+#dateNumber,
+#dateText  {
+    font-weight: bold;
+}
+
+#dateMonth,
+#dateYear {
+    margin-left: 7px;
+    font-size: 20px;
+}
+
+form {
+    margin: 20px 0;
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-columns: auto 35px auto;
+    grid-column-gap: 15px;
+}
+
+input {
+    border: 1px solid var(--prymary);
+    padding-left: 10px;
+}
+
+input:focus {
+    outline: none;
+}
+
+.addTaskButton,
+.orderButton {
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.addNewTaskButton {
+    height: 35px;
+    border: 1px solid var(--prymary);
+    border-radius: 50%;
+    font-size: 18px;
+    background-color: rgb(109, 106, 106);
+    color: white;
+}
+
+.orderButton {
+    background-color: var(--secondary);
+    color: white;
+}
+
+.task {
+    background-color: rgb(180, 224, 180);
+    padding: 15px;
+    margin-top: 15px;
+    color: white;
+    cursor: pointer;
+}
+
+.done {
+    text-decoration: line-through;
+    color: var(--dark);
+    background-color: var(--prymary);
+}
